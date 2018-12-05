@@ -44,7 +44,6 @@ body {
 }
 
 .post {
-  overflow-y: auto;
   grid-template-columns: 1;
   border-radius: 3px;
   border: 1px solid #e6e6e6;
@@ -117,14 +116,14 @@ body {
   padding: 0;
 }
 
-.stories {
+.panel {
   background-color: #fff;
   border: 1px solid #e6e6e6;
   display:flex;
   flex-direction: column;
 }
 
-.stories-header {
+.panel-header {
   display:flex;
   justify-content:space-between;
   align-items:center;
@@ -132,92 +131,46 @@ body {
   margin-right: 1em;
 }
 
-.stories-header h3 {
+.panel-header h3 {
   font-size: 1em;
 }
 
-.stories-header h3:first-child {
+.panel-header h3:first-child {
   color: #999;
 }
 
-.stories-header h3:last-child {
+.panel-header h3:last-child {
   font-weight: bold;
 }
 
-.story {
-  margin-left: 1em;
-  display: flex;
-}
-
-.story-text {
-  height: 60px;
-  display:flex;
-  flex-direction: column;
-  margin-left: .5em;
-}
-
-.story-text p {
-  margin: 0;
-  padding: 0;
-}
-
-.story-text p:first-child {
-  font-weight: bold;
-}
-
-.suggestions-for-you {
-  margin-top: 1em;
-  background-color: #fff;
-  border: 1px solid #e6e6e6;
-  display: flex;
-  flex-direction: column;
-}
-
-.suggestions-header {
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  margin-left: 1em;
-  margin-right: 1em;
-}
-
-.suggestions-header h3 {
-  font-size: 1em;
-}
-
-.suggestions-header h3:first-child {
-  color: #999;
-}
-
-.suggestions-header h3:last-child {
-  font-weight: bold;
-}
-
-.suggestion {
+.panel-section {
   margin-left: 1em;
   margin-right: 1em;
   display: flex;
 }
 
-.suggest-text {
-  height: 60px;
-  width: 100%;
-  display: lex;
-  flex-direction: column;
-  margin-left: .5em;
-}
-
-.suggest-text p {
-  margin: 0;
-  padding: 0;
-}
-
-.suggestion a {
+.panel-section a {
   color: #3897f0;
   font-weight: bold;
   margin-top: .5em;
 }
 
+.panel-text {
+  height: 60px;
+  display:flex;
+  flex-direction: column;
+  margin-left: .5em;
+  width: 100%;
+}
+
+.panel-text p {
+  margin: 0;
+  padding: 0;
+}
+
+.panel-text p:first-child {
+  font-weight: bold;
+}
 
 .footer-and-legal {
   margin-top: 1em;
@@ -238,9 +191,9 @@ body {
 }
 
 .user-picture {
-  height:40px;
-  width: 40px;
-  border-radius: 180%;
+  height:40px !important;
+  width: 40px !important;
+  border-radius: 180% !important;
 }
 
 .active-user-picture {
